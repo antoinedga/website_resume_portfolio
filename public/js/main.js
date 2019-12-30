@@ -35,9 +35,9 @@ $.ajax({url: "http://localhost:5000/projects", success: function(result){
     var list_tech = document.createElement("ul");
     var row = document.createElement('tr');
     row.innerHTML += `<h3>${project.name}</h3>`;
-    for (var i = 0; i < project.tech.length; i++)
+    for (var j = 0; j < project.tech.length; j++)
     {
-      list_tech.innerHTML += `<li> ${project.tech[i]} </li>`;
+      list_tech.innerHTML += `<li> ${project.tech[j]} </li>`;
     }
 
     var list_item = document.createElement("li");
@@ -45,9 +45,9 @@ $.ajax({url: "http://localhost:5000/projects", success: function(result){
     list_item.append(list_tech);
     content.append(list_item);
 
-    for (var i = 0; i < project.description.length; i++)
+    for (var j = 0; j < project.description.length; j++)
     {
-      content.innerHTML += `<li> ${project.description[i]} </li>`;
+      content.innerHTML += `<li> ${project.description[j]} </li>`;
     }
     row.append(content);
     $("#table_project").append(row);

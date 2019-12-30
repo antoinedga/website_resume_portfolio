@@ -32,7 +32,7 @@ app.use('/lines', api_quotes);
 app.use('/projects', api_projects); 
 
 app.get('*', function(req, res){
-  res.status(404).send('what???');
+  res.status(404).sendFile(__dirname + '/public/404.html');
 });
 
 const port = process.env.PORT || 5000;

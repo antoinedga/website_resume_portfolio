@@ -5,8 +5,8 @@ const projectsSchema = new Schema({
     name:{
         type: String
     }, 
-     tech: {
-      type: [String]
+    tech: {
+        type: [String]
     },
     description: {
         type: [String]
