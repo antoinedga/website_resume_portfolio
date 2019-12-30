@@ -1,0 +1,22 @@
+{
+  "name": "web-node-app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "concurrently": "^5.0.2",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "mongodb": "^3.4.1",
+    "mongoose": "^5.8.2",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
