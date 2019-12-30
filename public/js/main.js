@@ -41,6 +41,7 @@ $.ajax({url: "http://localhost:5000/projects", success: function(result){
     }
 
     var list_item = document.createElement("li");
+    list_item.innerHTML += (`Technology <p id=\"date_project\" class=\"w3-right\">${project.semester}</p>`)
     list_item.append(list_tech);
     content.append(list_item);
 
