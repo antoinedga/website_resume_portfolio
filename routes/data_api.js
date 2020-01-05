@@ -6,7 +6,7 @@ router.route('/').get((req,res) => {
     .then(list => {
         res.json(list)
     })
-    .catch(err => res.status(400).json('Error: uwu ' + err));
+    .catch(err => res.status(400).json('Error: ' + err));
 });
 
 module.exports = router;

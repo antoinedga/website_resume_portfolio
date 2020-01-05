@@ -1,5 +1,15 @@
 body, html{height:100%}
-
+#first_grid{
+    /* background: #7e8aa7; */
+}
+#second_grid{
+    background: #1a3573;
+    height: 55vh;
+}
+#chartContainer{
+    height: 55vh;
+    width : 100%;
+}
 video{
     width: 100%;
     height: 100%;
@@ -19,15 +29,15 @@ header{
 }
 
 #projects{
-    height: 60vh;
+    height: 70vh;
     margin-bottom: 0;
-    background: #16487a;
+    background: #40578b;
 }
 
 #selfie_about{
     border-radius: 50%;
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 400px;
 }
 
 #table-holder{
@@ -47,5 +57,18 @@ table{
 }
 
 .w3-top{
-    background: #1fafc2;
+    /* background: #40578b; */
+    background: #295CBB;
+
+}
+
+#iframe_holder{
+    height: 100%;
+}
+iframe{
+    height: 100%;
+    width: 100%;
+}
+#date_project{
+    padding-right: 20px;
 }

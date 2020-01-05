@@ -23,7 +23,7 @@ app.use(
 
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true } ).
 then(() => {
-    console.log("MongoDB has successfully connected\n");
+  console.log("MongoDB has successfully connected\n");
 }).catch(err => console.log(err));
 
 
