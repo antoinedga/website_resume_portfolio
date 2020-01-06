@@ -55,7 +55,7 @@ $.ajax({url: "http://localhost:5000/projects", success: function(result){
 
   window.onload = function () {
 	
-    var chart = new CanvasJS.Chart("chartContainer", {
+    var chart = new CanvasJS.Chart("second_grid", {
       animationEnabled: true,
       title:{
         text:"Technical Skills Rating",

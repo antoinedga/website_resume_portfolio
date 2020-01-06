@@ -65,6 +65,9 @@ table{
 #iframe_holder{
     height: 100%;
 }
+#close_iframe{
+margin: 16px;
+}
 iframe{
     height: 100%;
     width: 100%;
