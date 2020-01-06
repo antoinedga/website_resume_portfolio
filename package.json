@@ -1,6 +1,12 @@
 {
-  "name": "web-node-app",
-  "version": "0.0.0",
+  "name": "Antoine's Resume Website",
+  "author" : "Antoine Gordon-Alvarez <an.gordonalvarez@gmail.com>",
+  "version": "1.0.0",
+  "description" : "A website for myself to show more of myself and more projects than my resume can hold",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antoinedga/website_resume_portfolio.git"
+  },
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
