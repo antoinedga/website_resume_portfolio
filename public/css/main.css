@@ -4,11 +4,11 @@ body, html{height:100%}
 }
 #second_grid{
     background: #1a3573;
-    height: 55vh;
+    height: 60vh; 
+    padding: 0px 40px;
 }
-#chartContainer{
-    height: 55vh;
-    width : 100%;
+#skill_chart{
+    height: 100%;
 }
 video{
     width: 100%;

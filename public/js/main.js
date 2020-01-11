@@ -23,7 +23,6 @@ function a()
 
 } 
 
-
 $.ajax({url: "http://localhost:5000/projects", success: function(result){
    result.forEach(putInTable);
   }});
@@ -55,49 +54,72 @@ $.ajax({url: "http://localhost:5000/projects", success: function(result){
 
   window.onload = function () {
 	
-    var chart = new CanvasJS.Chart("second_grid", {
+    var chart = new CanvasJS.Chart("skill_chart", {
       animationEnabled: true,
+
+      backgroundColor: "#1a3573",
       title:{
         text:"Technical Skills Rating",
         padding: {
           top: 10,
           bottom: 2,
-        }
+        },
+        fontColor	: "white",
+
       },
       axisX:{
         interval: 1,
+        tickColor: "white",
+        gridColor: "white" ,
+        labelMaxWidth: 100,
+        labelWrap: true,
+        margin: 10,
+        labelFontColor: "white",
+        lineThickness: 5,
+        lineColor: "white "
       },
       axisY2:{
         interval: 25,
         tickLength: 0,
+        lineThickness: 5,
+        lineColor: "white ",
         tickThickness: 0,
+        gridThickness: 5,
+        labelFontColor: "white",
+        gridColor: "white" ,
         labelFormatter: function ( e ) {
             if (e.value == 25)
-              return "Novice";
+              return "Novice (25)";
             else if (e.value == 50)
-              return "Intermediate";
+              return "Intermediate (50)";
             else if (e.value == 75)
-              return "Expert";
+              return "Expert (75)";
             else if (e.value == 100)
-              return "Master";
+              return "Master (100)";
             else
               return "";
          },
         maximum: 100
       },
-      zoomEnabled: true,
       dataPointWidth: 20,
       data: [{
         type: "bar",
         axisYType: "secondary",
-        color: "#014D65",
         dataPoints: [
-          { y: 60, x: 0, label: "Java" },
-          { y: 63, x: 1,label: "C" },
-          { y: 55, label: "JavaScript" },
+          { y: 60, label: "Java" },
+          { y: 63, label: "C" },
+          { y: 55, label: "HTML & CSS" },
+          { y: 35, label: "JQuery" },
           { y: 45, label: "BootStrap" },
           { y: 58, label: "W3.CSS" },
           { y: 35, label: "PHP" },
+          { y: 40, label: "Git" },
+          { y: 35, label: "MongoDB" },
+          { y: 35, label: "MySQL" },
+          { y: 35, label: "Node.js" },
+          { y: 35, label: "Express.js" },
+          { y: 35, label: "CanvasJS" },
+
         ]
       }]
     });
