@@ -27,7 +27,7 @@ then(() => {
 }).catch(err => console.log(err));
 
 
-app.use('/', indexRouter);
+app.use('thegordonexpereience.herokuapp.com/', indexRouter);
 app.use('/lines', api_quotes); 
 app.use('/projects', api_projects); 
 
