@@ -15,16 +15,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-
-    <style>
-    body,h1,h2,h3,h4,h5,h6,p {font-family: "Open Sans", sans-serif}
-    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-    .fa-coffee {font-size:200px}
-    .fa-file-code-o{ font-size: 250px;}
-    </style>
 
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -39,18 +33,19 @@
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-card w3-xlarge w3-text-white">
+    <h2 id="name" class="w3-bar-item w3-hide-small " >Antoine Gordon-Alvarez</h2>
     <a href="https://github.com/antoinedga" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right "><i class="fa fa-github"></i>&nbsp GitHub</a>
     <a href="#projects" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right ">Projects</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right ">Skills</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white w3-right ">Home</a>
+    <a href="#skill_chart" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right ">Skills</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-white  w3-right ">Home</a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
     <a href="https://github.com/antoinedga" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right "><i class="fa fa-github"></i>&nbsp GitHub</a>
     <a href="#projects" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right ">Projects</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right ">Skills</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white w3-right ">Home</a>
+    <a href="#second_grid" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right ">Skills</a>
+    <a href=".w3-top" class="w3-bar-item w3-button w3-padding-large w3-white w3-right ">Home</a>
   </div>
 </div>
 
@@ -120,7 +115,7 @@
 
           </table>
         
-        </div> 
+      </div> 
   </div>
 </div>
 
@@ -133,15 +128,15 @@
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
   <div class="w3-xlarge w3-padding-32">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <a href="https://www.linkedin.com/in/antoinedga/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="mailto:an.gordonalvarez@gmail.com"><i class="fa fa-envelope w3-hover-opacity" aria-hidden="true"></i></a>
   </div>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
 <script>
-// Used to toggle the menu on small screens when clicking on the menu button
+
+
 function myFunction() {
   var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
