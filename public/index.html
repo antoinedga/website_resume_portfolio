@@ -9,6 +9,7 @@
     <meta name="author" content="Antoine Gordon-Alvarez, an.gordonalvarez@gmail.com">
     <meta name="language" content="EN">
     <meta name="Classification" content="Portfolio">
+    <meta name="designer" content="MariaFernanda Zegarra, geekymari@me.com">
     
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -40,16 +41,16 @@
   <div class="w3-bar w3-card w3-xlarge w3-text-white">
     <a href="https://github.com/antoinedga" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right "><i class="fa fa-github"></i>&nbsp GitHub</a>
     <a href="#projects" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right ">Projects</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right ">Skills</a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white w3-right ">Home</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right ">Education</a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-    <a href="https://github.com/antoinedga" target="_blank" class="w3-bar-item w3-button w3-padding-large w3-right">GitHub</a>
+    <a href="https://github.com/antoinedga" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right "><i class="fa fa-github"></i>&nbsp GitHub</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right ">Projects</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right ">Skills</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white w3-right ">Home</a>
   </div>
 </div>
 
@@ -62,10 +63,10 @@
 <!-- First Grid -->
 <div id="first_grid" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   <div class="w3-display-container">
-     <div class="w3-twothird w-display-middle w3-margin">
+     <div class="w3-twothird w3-margin">
           <h1>About</h1>
     
-          <p class="w3-text-black w3-large">
+          <p class="w3-text-black w3-xlarge">
             My name is Antoine Gordon-Alvarez and I am currently studying at the University of Central Florida getting 
             my bachelor’s in computer science. Starting in Fall 2020 I'll be doing my Master at UCF's accelerated BS to MS
             program. I will be studying abroad at Technological University Dublin this spring (2020) to develop a global 
@@ -78,12 +79,14 @@
             such as hiking and swimming, live music/open mic and just broadening my experiences with new adventures (The next thing is Scuba diving!).</p>
       </div>
 
-    <div class="img_wrapper w3-rest w3-right">
-      <img class="w3-container w3-padding w3-center" id="selfie_about" src="/media_content/selfie.JPEG" alt="">
+    <div class=" w3-rest w3-container">
+      <div class="w3-display-container w3-center">
+        <img id="selfie_about" src="/media_content/selfie.jpg" alt="">
+      </div>
     </div>
     
     <div class="w3-bar">
-      <button class="w3-bar-item w3-button w3-small" onclick="open_iframe()" >view Resume</button>
+      <button class="w3-bar-item w3-button w3-large" onclick="open_iframe()" ><u>View Resume</u></button>
       <a href="./media_content/Resume_12.31.2019.pdf" class="w3-bar-item w3-button w3-circle" download="Antoine's_Resume">
         <i class="fa fa-download" aria-hidden="true"></i>
       </a>
@@ -98,7 +101,7 @@
 
 <!-- Second Grid -->
 <div id="second_grid" class="w3-container-fluid">
-  <div id="skill_chart" class="w3-container-fluid"></div>
+  <div id="skill_chart" class="w3-container-fluid" ></div>
 </div>
 
 <div class="w3-row-padding w3-padding-32 w3-container w3-center" id="projects"> 
@@ -124,7 +127,7 @@
 
 
 <div id="quote_holder" class="w3-container w3-black w3-center w3-opacity w3-padding-64 w3-border-amber">
-    <p id="quotes" class="w3-margin w3-xlarge w3-center w3-panel"></p>
+    <div id="quotes" class="w3-margin w3-xlarge w3-center w3-panel"></div>
 </div>
 
 <!-- Footer -->
