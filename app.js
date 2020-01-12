@@ -1,6 +1,7 @@
 var express = require('express');
 var path = require('path');
 const mongoose = require('mongoose');
+var cors = require('cors');
 const bodyParser = require("body-parser");
 var indexRouter = require('./routes/index');
 const uri = require("./routes/keys.js").mongoURI;
@@ -20,6 +21,7 @@ app.use(
   app.use(bodyParser.json());
   // DB Config
 
+  app.use(cors());
 
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true } ).
 then(() => {
