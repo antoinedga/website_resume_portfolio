@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const proj = require('./models/projects_model');
+var cors = require('cors');
 
 router.route('/').get((req,res) => {
     proj.find()
