@@ -21,7 +21,9 @@ app.use(
   app.use(bodyParser.json());
   // DB Config
 
-  app.use(cors());
+  app.use(cors({
+    origin: 'https://thegordonexperience.herokuapp.com'
+  }));
 
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true } ).
 then(() => {
