@@ -1,5 +1,5 @@
 var array;
-$.ajax({url: "http://localhost:5000/lines", success: function(result){
+$.ajax({url: "https://thegordonexpereience.herokuapp.com/lines", success: function(result){
     array = result;
     $("#quotes").append(result[0].sent);
   }});
@@ -23,7 +23,7 @@ function a()
 
 } 
 
-$.ajax({url: "http://localhost:5000/projects", success: function(result){
+$.ajax({url: "https://thegordonexpereience.herokuapp.com/projects", success: function(result){
    result.forEach(putInTable);
   }});
 
