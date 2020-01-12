@@ -35,7 +35,7 @@ app.get('*', function(req, res){
   res.status(404).sendFile(__dirname + '/public/404.html');
 });
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8080;
 
 app.listen(port, () => console.log("Server Up and Running on Port " + port + "!"));
 
