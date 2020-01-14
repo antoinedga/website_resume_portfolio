@@ -4,10 +4,6 @@ body,h1,h2,h3,h4,h5,h6,p {font-family: "Open Sans", sans-serif}
 .fa-coffee {font-size:200px}
 .fa-file-code-o{ font-size: 250px;}
 
-#first_grid{
-    /* background: #7e8aa7; */
-    
-}
 #name{
     font-family: 'Satisfy', cursive;
 }
@@ -49,8 +45,11 @@ header{
 
 #selfie_about{
     border-radius: 20%;
-    width: 450px;
-    height: 500px;
+    width: 375px;
+    height: 400px;
+}
+#image_holder{
+    height: 100%;
 }
 
 #table-holder{
