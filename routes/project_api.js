@@ -5,7 +5,7 @@ var cors = require('cors');
 router.route('/').get((req,res) => {
     proj.find()
       .then(list => {
-          res.json(list);
+          res.status(200).json(list);
       })
       .catch(err => res.status(400).json('Error: ' + err));
   });
@@ -20,7 +20,7 @@ router.route('/').get((req,res) => {
     const tech = req.body.tech;
     const temp = new proj({name,tech,description,semester});
 
-    temp.save().then(() => res.json('Project added Successfully!'))
+    temp.save().then(() => res.json('Project added Successfully!').status(200))
     .catch(err => res.status(400).json('Error: ' + err));
   });
   module.exports = router;

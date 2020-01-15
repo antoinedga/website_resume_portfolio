@@ -18,10 +18,10 @@ app.use(
       extended: false
     })
   );
-  app.use(bodyParser.json());
-  // DB Config
+app.use(bodyParser.json());
 
-  app.use(cors());
+
+app.use(cors());
 
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true } ).
 then(() => {
