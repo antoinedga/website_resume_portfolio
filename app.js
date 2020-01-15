@@ -1,5 +1,6 @@
 var express = require('express');
 var path = require('path');
+const helmet = require('helmet');
 const mongoose = require('mongoose');
 var cors = require('cors');
 const bodyParser = require("body-parser");
@@ -18,9 +19,9 @@ app.use(
       extended: false
     })
   );
+  
 app.use(bodyParser.json());
-
-
+app.use(helmet());
 app.use(cors());
 
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true } ).
