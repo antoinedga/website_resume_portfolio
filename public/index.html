@@ -32,20 +32,19 @@
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-card w3-xlarge w3-text-white">
-    <h2 id="name" class="w3-bar-item w3-hide-small " >Antoine Gordon-Alvarez</h2>
-    <a href="https://github.com/antoinedga" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right "><i class="fa fa-github"></i>&nbsp GitHub</a>
-    <a href="#projects" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right ">Projects</a>
-    <a href="#skill_chart" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right ">Skills</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-white  w3-right ">Home</a>
+  <div class="w3-bar w3-card w3-left-align w3-large w3-text-white">
+    <a class="w3-bar-item w3-button w3-hide-large w3-right w3-padding-large w3-hover-white w3-large" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item  w3-button w3-padding-large">Antoine Gordon-Alvarez</a>
+    <a href="#" class="w3-bar-item  w3-hide-medium w3-button w3-hide-small w3-padding-large w3-hover-white w3-right">GitHub</a>
+    <a href="#second_grid" class="w3-bar-item  w3-hide-medium w3-button w3-hide-small w3-padding-large w3-hover-white w3-right">Skills</a>
+    <a href="#projects" class="w3-bar-item w3-hide-medium  w3-button w3-hide-small w3-padding-large w3-hover-white w3-right">Projects</a>
   </div>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="https://github.com/antoinedga" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right "><i class="fa fa-github"></i>&nbsp GitHub</a>
-    <a href="#projects" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right ">Projects</a>
-    <a href="#second_grid" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right ">Skills</a>
-    <a href=".w3-top" class="w3-bar-item w3-button w3-padding-large w3-white w3-right ">Home</a>
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-large ">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">GitHub</a>
+    <a href="#second_grid" class="w3-bar-item w3-button w3-padding-large">Skills</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-padding-large">Projects</a>
   </div>
 </div>
 
@@ -56,14 +55,14 @@
 </header>
 
 <!-- First Grid -->
-<div id="first_grid" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-display-container">
-     <div class="w3-margin">
-          <h1>About</h1>
-    
-          <p class="w3-text-black w3-xlarge w3-half">
-            My name is Antoine Gordon-Alvarez and I am currently studying at the University of Central Florida getting 
-            my bachelor’s in computer science. Starting in Fall 2020 I'll be doing my Master at UCF's accelerated BS to MS
+<div id="first_grid" class="w3-row-padding w3-light-grey w3-padding-64 w3-container w3-mobile">
+  <div class="w3-container w3-mobile">
+    <h1>About</h1>
+    <div class=" w3-mobile w3-row">
+
+          <p class="w3-text-black w3-xlarge w3-mobile w3-col l8 m8 s9">
+            My name is Antoine&nbsp;Gordon-Alvarez and I am currently studying at the University of Central Florida getting 
+            my bachelor’s in computer science. Starting in Fall&nbsp;2020 I'll be doing my Master at UCF's accelerated&nbsp;BS&nbsp;to&nbsp;MS
             program. I will be studying abroad at Technological University Dublin this Spring&nbsp;(2020) to develop a global 
             mindset and dive into a new culture.  This will be a difficult challenge for me as I will be leaving everything
             I know behind and entering a new, foreign environment for the first time. I believe having a global mindset and 
@@ -71,15 +70,12 @@
             now that technology as given us the possibility to be connected around the world and solve real-world problems.
             My current academic interests are software development / mobile development with a curiosity in expanding my 
             horizon by learning different aspects in Computer Science. My personal interest are traveling, outdoor activities
-            such as hiking and swimming, live music/open mic and just broadening my experiences with new adventures (The next thing is Scuba diving!).
+            such as hiking and swimming, live music/open&nbsp;mic and just broadening my experiences with new adventures (The&nbsp;next&nbsp;thing&nbsp;is&nbsp;Scuba&nbsp;diving!).
           </p>
-            <img class=" w3-rest w3-margin" id="selfie_about" src="./media_content/selfie.jpg" alt="">
+          
+          <img class="w3-padding w3-mobile w3-col l4 m10 s3" id="selfie_about" src="./media_content/selfie.jpg" alt="">
             
       </div>
-
-    <!-- <div id="image_holder" class=" w3-rest w3-container"></div>
-        <img class="w3-display-middle" id="selfie_about" src="./media_content/selfie.jpg" alt="">
-    </div> -->
     
     <div class="w3-bar">
       <button class="w3-bar-item w3-button w3-large" onclick="open_iframe()" ><u>View Resume</u></button>
@@ -90,6 +86,7 @@
   </div>
 </div>
 
+<!-- PDF iframe, resume -->
 <div id="iframe_holder" class="w3-row-padding w3-padding-32 w3-container-fluid w3-display-container w3-hide">
   <iframe class="w3-container w3-padding-32" src="./media_content/Resume_12.31.2019.pdf" frameborder="0"></iframe>
   <button id="close_iframe"class="w3-container w3-padding w3-button w3-blue w3-round-xlarge w3-display-topright" onclick="open_iframe()">Close</button>
@@ -100,13 +97,14 @@
   <div id="skill_chart" class="w3-container-fluid" ></div>
 </div>
 
-<div class="w3-row-padding w3-padding-32 w3-container w3-center" id="projects"> 
+<!-- third Grid Project Holder -->
+<div class="w3-row-padding w3-container w3-center" id="projects"> 
   
-  <div class="w3-quarter w3-center">
+  <div class="w3-col l4 m4 s12 w3-center">
     <i class="fa fa-file-code-o w3-padding-64 w3-text-white w3-margin-right"></i>
   </div>
 
-  <div class="w3-rest">
+  <div class="w3-col l8 m8 s12 w3-padding">
       <div class="w3-content w3-margin-bottom w3-bottombar w3-border-white w3-text-white">
           <h1 class="w3-xxxlarge"><b>Projects</b></h1>
       </div>
@@ -121,7 +119,7 @@
 </div>
 
 
-
+<!-- personal quotes i like placement -->
 <div id="quote_holder" class="w3-container w3-black w3-center w3-opacity w3-padding-64 w3-border-amber">
     <div id="quotes" class="w3-margin w3-xlarge w3-center w3-panel"></div>
 </div>
