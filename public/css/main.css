@@ -4,6 +4,16 @@ body,h1,h2,h3,h4,h5,h6,p {font-family: "Open Sans", sans-serif}
 .fa-coffee {font-size:200px}
 .fa-file-code-o{ font-size: 250px;}
 
+a{
+    text-decoration: none !important;
+    font-weight: 700 !important;
+}
+
+#logo{
+    height: 43px;
+    width: 43px;
+}
+
 #name{
     font-family: 'Satisfy', cursive;
 }
