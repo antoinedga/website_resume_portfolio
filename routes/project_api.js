@@ -14,13 +14,17 @@ router.route('/').get((req,res) => {
 
   router.route('/add_project').post((req,res) => {
     
-    const name = req.body.name;
-    const semester = req.body.semester;
-    const description = req.body.description;
+    const name = req.body.name || null;
+    const semester = req.body.semester || null;
+    const description = req.body.description
     const tech = req.body.tech;
     const temp = new proj({name,tech,description,semester});
+  
 
-    temp.save().then(() => res.json('Project added Successfully!').status(200))
+    if (temp.name == "" || tech.length == 0 || description == 0 || semester == "")
+      return res.status(400).json('error in adding');
+    
+    temp.save().then(() => res.json(temp).status(200))
     .catch(err => res.status(400).json('Error: ' + err));
   });
   module.exports = router;

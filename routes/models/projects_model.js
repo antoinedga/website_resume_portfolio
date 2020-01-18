@@ -3,16 +3,20 @@ const Schema = mongoose.Schema;
 
 const projectsSchema = new Schema({
     name:{
-        type: String
+        type: String,
+        required: true
     }, 
     tech: {
-        type: [String]
+        type: [String],
+        required: true
     },
     description: {
-        type: [String]
+        type: [String],
+        required: true
     },
     semester:{
-        type: String
+        type: String,
+        required: true
     }
 
 });
