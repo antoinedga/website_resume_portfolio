@@ -18,8 +18,8 @@ router.route('/').get((req,res) => {
     let name = !isEmpty(req.body.name) ? req.body.name : "";
     let semester = !isEmpty(req.body.semester) ? req.body.name : "";
     let description = req.body.description;
-    let tech = req.body.tech;
-    let temp = new proj({name,tech,description,semester});
+    let tech;
+    let temp;
     
     if (Validator.isEmpty(req.body.name) || Validator.isEmpty(req.body.semester))
       return res.status(400).json("did not add project");
@@ -27,7 +27,7 @@ router.route('/').get((req,res) => {
       description = req.body.description.split(".\n");
       tech = req.body.tech.split(".\n");
     }
- 
+    temp = new proj({name,tech,description,semester});
     temp.save().then(() => res.json(temp).status(200))
     .catch(err => res.status(400).json('Error: ' + err));
   });
