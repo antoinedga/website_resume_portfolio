@@ -24,8 +24,8 @@ router.route('/').get((req,res) => {
     if (Validator.isEmpty(req.body.name) || Validator.isEmpty(req.body.semester))
       return res.status(400).json("did not add project");
     else {
-      description = req.body.description.split(".\n");
-      tech = req.body.tech.split(".\n");
+      description = req.body.description.split(".");
+      tech = req.body.tech.split(".");
     }
     temp = new proj({name,tech,description,semester});
     temp.save().then(() => res.json(temp).status(200))
