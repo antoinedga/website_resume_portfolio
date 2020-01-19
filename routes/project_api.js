@@ -26,9 +26,10 @@ router.route('/').get((req,res) => {
     else {
       description = req.body.description.split(".");
       tech = req.body.tech.split(".");
+      console.log(tech);
     }
     temp = new proj({name,tech,description,semester});
-    temp.save().then(() => res.json(temp).status(200))
+    temp.save().then(() => res.json("Added Project Succesfully").status(200))
     .catch(err => res.status(400).json('Error: ' + err));
   });
   module.exports = router;
