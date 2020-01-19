@@ -16,7 +16,7 @@ router.route('/').get((req,res) => {
   router.route('/add_project').post((req,res) => {
     
     let name = !isEmpty(req.body.name) ? req.body.name : "";
-    let semester = !isEmpty(req.body.semester) ? req.body.name : "";
+    let semester = !isEmpty(req.body.semester) ? req.body.semester : "";
     let description;
     let tech;
     let temp;
