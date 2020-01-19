@@ -17,7 +17,7 @@ router.route('/').get((req,res) => {
     
     let name = !isEmpty(req.body.name) ? req.body.name : "";
     let semester = !isEmpty(req.body.semester) ? req.body.name : "";
-    let description = req.body.description;
+    let description;
     let tech;
     let temp;
     
