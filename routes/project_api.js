@@ -15,14 +15,18 @@ router.route('/').get((req,res) => {
 
   router.route('/add_project').post((req,res) => {
     
-    const name = !isEmpty(req.body.name) ? req.body.name : "";
-    const semester = !isEmpty(req.body.semester) ? req.body.name : "";
-    const description = req.body.description;
-    const tech = req.body.tech;
-    const temp = new proj({name,tech,description,semester});
+    let name = !isEmpty(req.body.name) ? req.body.name : "";
+    let semester = !isEmpty(req.body.semester) ? req.body.name : "";
+    let description = req.body.description;
+    let tech = req.body.tech;
+    let temp = new proj({name,tech,description,semester});
     
     if (Validator.isEmpty(req.body.name) || Validator.isEmpty(req.body.semester))
       return res.status(400).json("did not add project");
+    else {
+      description = req.body.description.split(".\n");
+      tech = req.body.tech.split(".\n");
+    }
  
     temp.save().then(() => res.json(temp).status(200))
     .catch(err => res.status(400).json('Error: ' + err));
