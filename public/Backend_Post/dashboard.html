@@ -11,22 +11,23 @@
             <form id="forms_post">
                 <div class="form-group">
                     <label for="name_project">Name</label>
-                    <input class="form-control" type="text" name="name">
+                    <input class="form-control" required type="text" name="name">
                 </div>
                 <div class="form-group">
                     <label for="semester_project">Semester</label>
-                    <input class="form-control" type="text" name="semester">
+                    <input class="form-control" required type="text" name="semester">
                 </div>
                 <div class="form-group">
                     <label for="tech_project">Tech</label>
-                    <textarea name="tech" class = "form-control" rows = "7" placeholder = "programming"></textarea>
+                    <textarea name="tech" required class = "form-control" rows = "7" placeholder = "programming"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="description_project">description</label>
-                    <textarea name="description" class = "form-control" rows = "5" placeholder = "description"></textarea>
+                    <textarea name="description" required class="form-control" rows = "5" placeholder = "description"></textarea>
                 </div>
                 <input type="submit" class="btn btn-primary"></button>
               </form>
+              <div id="result"></div>
         </div>
          
     </body>

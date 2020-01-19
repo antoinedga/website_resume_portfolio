@@ -10,6 +10,8 @@
 		dataType: 'json',
 		success: function(res) {
 			console.log(res);
+			$("#result").innerHTML = res;
+			document.getElementById('#forms_post').reset();
 		},
 		error: function(error) {
 		 console.log(error);
