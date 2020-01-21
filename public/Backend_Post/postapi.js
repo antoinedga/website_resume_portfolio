@@ -10,7 +10,7 @@
 		dataType: 'json',
 		success: function(res) {
 			console.log(res);
-			$("#result").innerHTML = res;
+			$("#result").append(res);
 		},
 		error: function(error) {
 		 console.log(error);

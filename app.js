@@ -14,7 +14,7 @@ var api_projects = require("./routes/project_api");
 
 var app = express();
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(favicon(path.join(__dirname, 'public/media_content', 'logo1.png')));
+app.use(favicon(path.join(__dirname,'public','media_content','logo1.png')));
 
 // Bodyparser middleware
 app.use(
