@@ -71,17 +71,20 @@ $.ajax({url: "https://thegordonexperience.herokuapp.com/projects", success: func
         interval: 1,
         tickColor: "white",
         gridColor: "white" ,
-        labelMaxWidth: 100,
+        labelMaxWidth: 150,
         labelWrap: true,
-        margin: 0,
+        margin: 10,
         labelFontColor: "white",
         lineThickness: 2,
         lineColor: "white"
       },
       axisY2:{
         interval: 25,
+        margin: 10,
         tickLength: 0,
         lineThickness: 2,
+        labelMaxWidth: 150,
+        labelWrap: true,
         lineColor: "white ",
         tickThickness: 0,
         gridThickness: 2,
@@ -101,7 +104,8 @@ $.ajax({url: "https://thegordonexperience.herokuapp.com/projects", success: func
          },
         maximum: 100
       },
-      dataPointWidth: 13,
+      dataPointMaxWidth: 22,
+      dataPointMinWidth: 10,
       data: [{
         type: "bar",
         axisYType: "secondary",
