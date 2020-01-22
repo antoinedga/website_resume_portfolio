@@ -106,19 +106,23 @@ $.ajax({url: "https://thegordonexperience.herokuapp.com/projects", success: func
           { y: 60, label: "Java" },
           { y: 63, label: "C" },
           { y: 55, label: "HTML & CSS" },
-          { y: 35, label: "JQuery" },
+          { y: 37, label: "JQuery" },
           { y: 45, label: "BootStrap" },
           { y: 58, label: "W3.CSS" },
           { y: 35, label: "PHP" },
-          { y: 40, label: "Git" },
-          { y: 35, label: "MongoDB" },
+          { y: 45, label: "Git" },
+          { y: 30, label: "MongoDB" },
           { y: 35, label: "MySQL" },
           { y: 35, label: "Node.js" },
-          { y: 35, label: "Express.js" },
+          { y: 30, label: "Express.js" },
           { y: 35, label: "CanvasJS" },
+          { y: 25, label: "AWS: EB & S3" },
+          { y: 25, label: "Heroku" },
 
         ]
       }]
     });
     chart.render();
   }
+
+  // skills last updated on 01/22/2019
