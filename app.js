@@ -6,7 +6,6 @@ var cors = require('cors');
 const bodyParser = require("body-parser");
 const favicon = require('serve-favicon');
 var indexRouter = require('./routes/index');
-var adminRouter = require('./routes/admin');
 const uri = require("./routes/keys.js").mongoURI;
 var api_quotes = require("./routes/data_api");
 var api_projects = require("./routes/project_api");
@@ -34,9 +33,11 @@ then(() => {
 
 
 app.use('/', indexRouter);
-app.use('/admin', adminRouter);
 app.use('/lines', api_quotes); 
 app.use('/projects', api_projects); 
+app.get('/arwing116', function(req, res){
+  res.status(200).sendFile(__dirname + '/Backend_Post/dashboard.html');
+});
 
 
 app.get('*', function(req, res){

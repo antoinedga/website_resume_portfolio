@@ -100,3 +100,31 @@ iframe{
 #quote_holder{
     height: 25vh;
 }
+
+@media screen and ( max-width: 767px ) {
+    img.responsive { width: 100%;
+        height: 375px;
+        margin-bottom: 30px;
+     }
+    }
+
+@media screen and ( min-width: 768px ) {
+    img.responsive { width: 450px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+         height: 600px; }
+    }
+
+@media screen and ( min-width: 992px ) {
+    img.responsive { width: 600px;
+            height: 700px;
+            margin-bottom: 30px;
+            margin-top: 10px; }
+    }
+
+@media screen and ( min-width: 1200px ) {
+    img.responsive { width: 600px;
+            height: 700px;
+            margin-bottom: 30px;
+            margin-top: 10px; }
+    }
