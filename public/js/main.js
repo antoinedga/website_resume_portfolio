@@ -4,11 +4,9 @@ $.ajax({url: "https://thegordonexperience.herokuapp.com/lines", success: functio
     $("#quotes").append(result[0].sent);
   }});
 
-
 setTimeout(a, 3000);
 
-function a()
-{
+function a() {
   var index = 0;
   window.setInterval(changeQuote, 15000);
 
@@ -19,8 +17,6 @@ function a()
     });
 
   }
-
-
 } 
 
 $.ajax({url: "https://thegordonexperience.herokuapp.com/projects", success: function(result){
@@ -28,14 +24,12 @@ $.ajax({url: "https://thegordonexperience.herokuapp.com/projects", success: func
   }});
 
 
-  function putInTable(project)
-  {
+  function putInTable(project) {
     var content = document.createElement("ul");
     var list_tech = document.createElement("ul");
     var row = document.createElement('tr');
     row.innerHTML += `<h3><u>${project.name}</u></h3>`;
-    for (var j = 0; j < project.tech.length; j++)
-    {
+    for (var j = 0; j < project.tech.length; j++) {
       list_tech.innerHTML += `<li> ${project.tech[j]} </li>`;
     }
 
@@ -44,8 +38,7 @@ $.ajax({url: "https://thegordonexperience.herokuapp.com/projects", success: func
     list_item.append(list_tech);
     content.append(list_item);
 
-    for (var j = 0; j < project.description.length; j++)
-    {
+    for (var j = 0; j < project.description.length; j++) {
       content.innerHTML += `<li> ${project.description[j]} </li>`;
     }
     row.append(content);
