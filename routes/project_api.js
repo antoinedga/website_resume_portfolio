@@ -13,14 +13,15 @@ router.route('/').get((req,res) => {
   });
   
   router.route('/add_project/:id').get((req,res) => {
-
-      res.status(200).sendFile(path.join(__dirname, '/Backend_Post/dashboard.html'));
+      
+      res.status(200).sendFile(
+        path.resolve(__dirname, '../public/dashboard.html'));
   });
   
   
   router.route('/add_project/:id').post((req,res) => {
     
-    if(req.body.password != "arwing")
+    if(req.body.password != "1164")
       res.status(400).json({error: "not allowed"});
 
     let name = !isEmpty(req.body.name) ? req.body.name : "";
