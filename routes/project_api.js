@@ -2,6 +2,7 @@ const router = require('express').Router();
 const proj = require('./models/projects_model');
 const Validator = require("validator");
 const isEmpty = require("is-empty");
+const path = require('path');
 
 router.route('/').get((req,res) => {
     proj.find()
@@ -12,19 +13,22 @@ router.route('/').get((req,res) => {
   });
   
   router.route('/add_project/:id').get((req,res) => {
-     if (req.params.id != 'arwing')
-      return res.status(400).json("not allowed");
-      res.status(200).sendFile(__dirname + '/Backend_Post/dashboard.html');
+
+      res.status(200).sendFile(path.join(__dirname, '/Backend_Post/dashboard.html'));
   });
   
   
   router.route('/add_project/:id').post((req,res) => {
     
+    if(req.body.password != "arwing")
+      res.status(400).json({error: "not allowed"});
+
     let name = !isEmpty(req.body.name) ? req.body.name : "";
     let semester = !isEmpty(req.body.semester) ? req.body.semester : "";
     let description;
     let tech;
     let temp;
+
     
     if (Validator.isEmpty(req.body.name) || Validator.isEmpty(req.body.semester))
       return res.status(400).json("did not add project");
