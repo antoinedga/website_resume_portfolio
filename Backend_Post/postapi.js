@@ -1,5 +1,5 @@
 
-  $( document ).ready(function() {
+  $(document).ready(function() {
 	$( "#forms_post" ).submit(function(event){
 	const data = $(this).serialize();
 
