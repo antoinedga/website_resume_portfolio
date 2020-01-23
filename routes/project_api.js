@@ -11,8 +11,14 @@ router.route('/').get((req,res) => {
       .catch(err => res.status(400).json('Error: ' + err));
   });
   
-
-  router.route('/add_project').post((req,res) => {
+  router.route('/add_project/:id').get((req,res) => {
+     if (req.params.id != 'arwing')
+      return res.status(400).json("not allowed");
+      res.status(200).sendFile(__dirname + '/Backend_Post/dashboard.html');
+  });
+  
+  
+  router.route('/add_project/:id').post((req,res) => {
     
     let name = !isEmpty(req.body.name) ? req.body.name : "";
     let semester = !isEmpty(req.body.semester) ? req.body.semester : "";
@@ -27,7 +33,7 @@ router.route('/').get((req,res) => {
       tech = req.body.tech.split(". ");
     }
     temp = new proj({name,tech,description,semester});
-    temp.save().then(() => res.json("Added Project Succesfully").status(200))
+    temp.save().then(() => res.json({ message: "Added Project Succesfully" }).status(200))
     .catch(err => res.status(400).json('Error: ' + err));
   });
   module.exports = router;
