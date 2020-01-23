@@ -11,14 +11,13 @@ router.route('/').get((req,res) => {
       .catch(err => res.status(400).json('Error: ' + err));
   });
   
-  router.route('/add_project/:id').get((req,res) => {
-     if (req.params.id != 'arwing')
-      return res.status(400).json("not allowed");
+  router.route('/add_project').get((req,res) => {
+
       res.status(200).sendFile(__dirname + '/Backend_Post/dashboard.html');
   });
   
   
-  router.route('/add_project/:id').post((req,res) => {
+  router.route('/add_project').post((req,res) => {
     
     let name = !isEmpty(req.body.name) ? req.body.name : "";
     let semester = !isEmpty(req.body.semester) ? req.body.semester : "";
