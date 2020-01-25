@@ -113,6 +113,10 @@ iframe{
         margin-bottom: 30px;
         margin-top: 10px;
          height: 600px; }
+
+    .fa-file-code-o {
+       font-size: 125px;
+    }
     }
 
 @media screen and ( min-width: 992px ) {
