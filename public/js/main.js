@@ -1,8 +1,8 @@
 var array;
-$.ajax({url: "https://thegordonexperience.herokuapp.com/lines", success: function(result){
+fetch("https://thegordonexperience.herokuapp.com/lines").then(function(result){
     array = result;
     $("#quotes").append(result[0].sent);
-  }});
+  });
 
 setTimeout(a, 3000);
 
@@ -19,9 +19,10 @@ function a() {
   }
 } 
 
-$.ajax({url: "https://thegordonexperience.herokuapp.com/projects", success: function(result){
+fetch("https://thegordonexperience.herokuapp.com/projects").then(function(result){
+  console.log(result);
    result.forEach(putInTable);
-  }});
+  });
 
 
   function putInTable(project) {

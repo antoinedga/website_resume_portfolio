@@ -24,6 +24,7 @@ app.use(
   
 app.use(bodyParser.json());
 app.use(helmet());
+app.use(cors());
 
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true } ).
 then(() => {
