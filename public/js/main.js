@@ -27,8 +27,8 @@ function a() {
 fetch("https://thegordonexperience.herokuapp.com/projects").then(function(response) {
   return response.json();
 }).then(function(result){
-  console.log(result);
-   result.forEach(putInTable);
+
+   result.data.forEach(putInTable);
   });
 
 
