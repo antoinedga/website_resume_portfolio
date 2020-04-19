@@ -1,10 +1,15 @@
 var array;
-fetch("https://thegordonexperience.herokuapp.com/lines").then(function(result){
+
+fetch("https://thegordonexperience.herokuapp.com/lines").then(function(response) {
+  return response.json();
+})
+.then(function(result){
     array = result;
+    console.log(array);
     $("#quotes").append(result[0].sent);
+    setTimeout(a, 3000);
   });
 
-setTimeout(a, 3000);
 
 function a() {
   var index = 0;
@@ -19,7 +24,9 @@ function a() {
   }
 } 
 
-fetch("https://thegordonexperience.herokuapp.com/projects").then(function(result){
+fetch("https://thegordonexperience.herokuapp.com/projects").then(function(response) {
+  return response.json();
+}).then(function(result){
   console.log(result);
    result.forEach(putInTable);
   });
@@ -63,10 +70,9 @@ fetch("https://thegordonexperience.herokuapp.com/projects").then(function(result
       },
       axisX:{
         interval: 1,
+        labelAutoFit: true,
         tickColor: "white",
         gridColor: "white" ,
-        labelMaxWidth: 150,
-        labelWrap: true,
         margin: 10,
         labelFontColor: "white",
         lineThickness: 2,
@@ -78,8 +84,8 @@ fetch("https://thegordonexperience.herokuapp.com/projects").then(function(result
         tickLength: 0,
         lineThickness: 2,
         labelMaxWidth: 150,
-        labelWrap: true,
-        lineColor: "white ",
+        labelAutoFit: true,
+        lineColor: "white",
         tickThickness: 0,
         gridThickness: 2,
         labelFontColor: "white",
@@ -98,13 +104,14 @@ fetch("https://thegordonexperience.herokuapp.com/projects").then(function(result
          },
         maximum: 100
       },
-      dataPointMaxWidth: 22,
+      dataPointMaxWidth: 25,
       dataPointMinWidth: 10,
       data: [{
         type: "bar",
         axisYType: "secondary",
         dataPoints: [
           { y: 60, label: "Java" },
+          {y: 40, label: 'Android Dev'},
           { y: 63, label: "C" },
           { y: 55, label: "HTML & CSS" },
           { y: 37, label: "JQuery" },
@@ -114,16 +121,29 @@ fetch("https://thegordonexperience.herokuapp.com/projects").then(function(result
           { y: 45, label: "Git" },
           { y: 30, label: "MongoDB" },
           { y: 35, label: "MySQL" },
-          { y: 35, label: "Node.js" },
-          { y: 30, label: "Express.js" },
+          { y: 40, label: "Node.js" },
+          { y: 40, label: "Express.js" },
           { y: 35, label: "CanvasJS" },
+          {y: 30, label: 'Azure'},
           { y: 25, label: "AWS: EB & S3" },
           { y: 25, label: "Heroku" },
 
         ]
       }]
     });
-    chart.render();
+
+
+    // $("#second_grid").resizable({
+    //   create: function (event, ui) {
+    //     //Create chart.
+    //     $("#skill_chart").CanvasJSChart(chart);
+    //   },
+    //   resize: function (event, ui) {
+    //     //Update chart size according to its container size.
+    //     $("#skill_chart").CanvasJSChart().render();
+    //   }
+    // });
+   
   }
 
   // skills last updated on 01/22/2019
