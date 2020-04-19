@@ -4,9 +4,9 @@ fetch("https://thegordonexperience.herokuapp.com/lines").then(function(response)
   return response.json();
 })
 .then(function(result){
-    array = result;
+    array = result.data;
     console.log(array);
-    $("#quotes").append(result[0].sent);
+    $("#quotes").append(result.data[0].sent);
     setTimeout(a, 3000);
   });
 
@@ -28,7 +28,7 @@ fetch("https://thegordonexperience.herokuapp.com/projects").then(function(respon
   return response.json();
 }).then(function(result){
 
-   result.data.forEach(putInTable);
+   result.forEach(putInTable);
   });
 
 
