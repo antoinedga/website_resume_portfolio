@@ -10,6 +10,9 @@ a{
     text-decoration: none !important;
     font-weight: 700 !important;
 }
+canvas {
+    padding: 15px;
+}
 
 #logo{
     height: 43px;
@@ -26,10 +29,11 @@ a{
 #second_grid{
     background: #1a3573;
     height: 100vh; 
+    width: 100%;
 }
 #skill_chart{
     height: 90vh;
-    margin: 30px;
+    width: 80%;
 }
 video{
     width: 100%;

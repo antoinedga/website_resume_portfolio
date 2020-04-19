@@ -53,7 +53,7 @@ fetch("https://thegordonexperience.herokuapp.com/projects").then(function(respon
     $("#table_project").append(row);
   }
 
-  window.onload = function () {
+  $(document).ready(function () {
 	
     var chart = new CanvasJS.Chart("skill_chart", {
       animationEnabled: true,
@@ -63,28 +63,31 @@ fetch("https://thegordonexperience.herokuapp.com/projects").then(function(respon
         text:"Technical Skills Rating",
         padding: {
           top: 10,
-          bottom: 2,
+          bottom: 15,
         },
         fontColor	: "white",
 
       },
       axisX:{
+        margin: 10,
+        labelFontWeight: "bold",
         interval: 1,
+        labelFontSize: 18,
         labelAutoFit: true,
         tickColor: "white",
         gridColor: "white" ,
-        margin: 10,
         labelFontColor: "white",
-        lineThickness: 2,
+        lineThickness: 1.5,
         lineColor: "white"
       },
       axisY2:{
+        labelFontWeight: "bold",
         interval: 25,
-        margin: 10,
         tickLength: 0,
         lineThickness: 2,
         labelMaxWidth: 150,
-        labelAutoFit: true,
+        labelWrap: true,
+        labelFontSize: 18,
         lineColor: "white",
         tickThickness: 0,
         gridThickness: 2,
@@ -133,17 +136,8 @@ fetch("https://thegordonexperience.herokuapp.com/projects").then(function(respon
     });
 
 
-    // $("#second_grid").resizable({
-    //   create: function (event, ui) {
-    //     //Create chart.
-    //     $("#skill_chart").CanvasJSChart(chart);
-    //   },
-    //   resize: function (event, ui) {
-    //     //Update chart size according to its container size.
-    //     $("#skill_chart").CanvasJSChart().render();
-    //   }
-    // });
+    chart.render();
    
-  }
+  });
 
   // skills last updated on 01/22/2019
