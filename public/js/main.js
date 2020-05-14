@@ -28,6 +28,8 @@ fetch("https://thegordonexperience.herokuapp.com/projects").then(function(respon
   return response.json();
 }).then(function(result){
 
+  result.sort(sorting);
+
    result.forEach(putInTable);
   });
 
@@ -141,3 +143,39 @@ fetch("https://thegordonexperience.herokuapp.com/projects").then(function(respon
   });
 
   // skills last updated on 01/22/2019
+
+  function sorting( x, y) {
+    console.log(x);
+
+    var x_temp = x.semester.split(' ');
+    var y_temp = y.semester.split(' ');
+    
+    var x_seme = semester(x_temp[0]);
+    var y_seme = semester(y_temp[0]);
+  
+    if (x_temp[1] > y_temp[1])
+        return -1;
+
+    if (x_temp[1] < y_temp[1])
+      return 1;
+
+    if (x_seme > y_seme)
+      return 1;
+    
+    if (x_seme < y_seme)
+      return -1;
+    
+    return 0;
+
+  }
+
+  function semester(x) {
+
+    if (x.localeCompare("Summer") == 0)
+      return 3;
+
+    if (x.localeCompare("Spring") == 0)
+        return 2;
+    if (x.localeCompare("Fall") == 0)
+      return 1;
+  }
