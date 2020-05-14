@@ -5,7 +5,7 @@ fetch("https://thegordonexperience.herokuapp.com/lines").then(function(response)
 })
 .then(function(result){
     array = result.data;
-    console.log(array);
+   
     $("#quotes").append(result.data[0].sent);
     setTimeout(a, 3000);
   });
@@ -145,7 +145,6 @@ fetch("https://thegordonexperience.herokuapp.com/projects").then(function(respon
   // skills last updated on 01/22/2019
 
   function sorting( x, y) {
-    console.log(x);
 
     var x_temp = x.semester.split(' ');
     var y_temp = y.semester.split(' ');
