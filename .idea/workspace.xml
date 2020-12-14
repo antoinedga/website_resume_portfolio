@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3250b984-c2b5-4b4d-889f-22c4cacf7304" name="Default Changelist" comment="" />
+    <list default="true" id="3250b984-c2b5-4b4d-889f-22c4cacf7304" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +39,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/redux" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,13 +51,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Mark-A5\website_resume_portfolio\public" />
-      <recent name="$PROJECT_DIR$/public" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Mark-A5\website_resume_portfolio\public" />
       <recent name="C:\Users\Mark-A5\website_resume_portfolio\public\media_content" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mark-A5\website_resume_portfolio\public" />
+      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -70,6 +72,10 @@
       <workItem from="1602278835655" duration="1580000" />
       <workItem from="1602386361603" duration="599000" />
       <workItem from="1602386978873" duration="1102000" />
+      <workItem from="1607558460717" duration="728000" />
+      <workItem from="1607743811201" duration="89000" />
+      <workItem from="1607807663389" duration="71000" />
+      <workItem from="1607807760478" duration="15000" />
     </task>
     <servers />
   </component>
@@ -89,9 +95,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="279" y="264" key="FileChooserDialogImpl" timestamp="1602279512417">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1230" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607558508831">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="-1230" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1607558508831" />
+    <state x="-1641" y="264" key="FileChooserDialogImpl" timestamp="1607807773345">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1641" y="264" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1607807773345" />
     <state x="279" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602279512417" />
     <state x="0" y="168" key="SettingsEditor" timestamp="1602279518031">
       <screen x="0" y="0" width="1920" height="1040" />
