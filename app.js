@@ -21,7 +21,7 @@ app.use(
       extended: false
     })
   );
-  
+
 app.use(bodyParser.json());
 app.use(cors());
 
@@ -32,8 +32,12 @@ then(() => {
 
 
 app.use('/', indexRouter);
-app.use('/lines', api_quotes); 
-app.use('/projects', api_projects); 
+app.get('/resume', function(req, res, next) {
+    res.set('Cache-control', 'public, max-age=300');
+    res.sendFile(path.join(__dirname,'public','resume.pdf'));
+});
+app.use('/lines', api_quotes);
+app.use('/projects', api_projects);
 
 
 app.get('*', function(req, res){

@@ -14,11 +14,11 @@
     <meta name="language" content="EN">
     <meta name="Classification" content="Portfolio">
     <meta name="designer" content="MariaFernanda Zegarra, geekymari@me.com">
-    
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-   
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -61,22 +61,22 @@
     <div class=" w3-mobile w3-row">
 
           <p class="w3-text-black w3-xlarge w3-mobile w3-col l7 m10 s8">
-            My name is Antoine&nbsp;Gordon-Alvarez and I am currently studying at the University of Central Florida getting 
+            My name is Antoine&nbsp;Gordon-Alvarez and I am currently studying at the University of Central Florida getting
             my bachelor’s in computer science. Starting in Fall&nbsp;2020 I'll be doing my Master at UCF's accelerated&nbsp;BS&nbsp;to&nbsp;MS
-            program. I will be studying abroad at Technological University Dublin this Spring&nbsp;(2020) to develop a global 
+            program. I will be studying abroad at Technological University Dublin this Spring&nbsp;(2020) to develop a global
             mindset and dive into a new culture.  This will be a difficult challenge for me as I will be leaving everything
-            I know behind and entering a new, foreign environment for the first time. I believe having a global mindset and 
-            a strong cultural relativism is crucial in a professional work environment. It has become even more imperative 
+            I know behind and entering a new, foreign environment for the first time. I believe having a global mindset and
+            a strong cultural relativism is crucial in a professional work environment. It has become even more imperative
             now that technology as given us the possibility to be connected around the world and solve real-world problems.
-            My current academic interests are software development / mobile development with a curiosity in expanding my 
+            My current academic interests are software development / mobile development with a curiosity in expanding my
             horizon by learning different aspects in Computer Science. My personal interest are traveling, outdoor activities
             such as hiking and swimming, live music/open&nbsp;mic and just broadening my experiences with new adventures (The&nbsp;next&nbsp;thing&nbsp;is&nbsp;Scuba&nbsp;diving!).
           </p>
-          
+
           <img class="w3-padding w3-mobile w3-col l5 m10 s3 responsive w3-image" id="selfie_about" src="media_content/selfie.png" alt="a picture of me in Georgia">
-            
+
       </div>
-    
+
     <div class="w3-bar">
       <button class="w3-bar-item w3-button w3-large" onclick="open_iframe()"title="to view resume as a PDF inside webpage" ><u>View Resume</u></button>
       <a href="resume.pdf" class="w3-bar-item w3-button w3-circle" download="Antoine's_Resume" title="to download current resume instead of opening on webpage">
@@ -88,7 +88,7 @@
 
 <!-- PDF iframe, resume -->
 <div id="iframe_holder" class="w3-row-padding w3-padding-32 w3-container-fluid w3-display-container w3-hide">
-  <iframe class="w3-container w3-padding-32" src="resume.pdf" alt="to display resume in an Picture frame to see on same page of website"></iframe>
+  <iframe class="w3-container w3-padding-32" src="resume" alt="to display resume in an Picture frame to see on same page of website"></iframe>
   <button id="close_iframe" class="w3-container w3-padding w3-button w3-blue w3-round-xlarge w3-display-topright" onclick="open_iframe()">Close</button>
 </div>
 
@@ -98,8 +98,8 @@
 </div>
 
 <!-- third Grid Project Holder -->
-<div class="w3-row-padding w3-container w3-center" id="projects"> 
-  
+<div class="w3-row-padding w3-container w3-center" id="projects">
+
   <div class="w3-col l4 m3 w3-hide-small">
     <i class="fa fa-file-code-o w3-padding-64 w3-text-white"></i>
   </div>
@@ -108,13 +108,13 @@
       <div class="w3-content w3-margin-bottom w3-bottombar w3-border-white w3-text-white">
           <h1 class="w3-xxxlarge"><b>Projects</b></h1>
       </div>
-    
+
       <div id="table-holder" class="w3-content w3-left-align w3-large w3-text-white">
           <table id="table_project">
 
           </table>
-        
-      </div> 
+
+      </div>
   </div>
 </div>
 
@@ -125,7 +125,7 @@
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
   <div class="w3-xlarge w3-padding-32">
     <a href="https://www.linkedin.com/in/antoinedga/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
     <a href="mailto:an.gordonalvarez@gmail.com"><i class="fa fa-envelope w3-hover-opacity" aria-hidden="true"></i></a>
@@ -141,7 +141,7 @@ function myFunction() {
   var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
-  } else { 
+  } else {
     x.className = x.className.replace(" w3-show", "");
   }
 }
