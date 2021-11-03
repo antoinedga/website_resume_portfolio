@@ -24,6 +24,6 @@
     "mongoose": "^5.8.2",
     "nodemon": "^2.0.6",
     "serve-favicon": "^2.5.0",
-    "validator": "^12.1.0"
+    "validator": "^13.7.0"
   }
 }
